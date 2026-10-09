@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <!-- viewport-fit=cover lets the app draw under the notch; safe-area insets keep content clear of it. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>Stay in the Loop</title>
+    <!-- Story images are hotlinked from news sites; many refuse requests that carry a foreign Referer. -->
+    <meta name="referrer" content="no-referrer" />
+
+    <!-- Home-screen web app (PWA). Paths are absolute because the app is served from /stay-in-the-loop/. -->
+    <link rel="manifest" href="/stay-in-the-loop/manifest.json" />
+    <link rel="apple-touch-icon" href="/stay-in-the-loop/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Loop" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        overflow: hidden;
+        background-color: #ffffff;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        overscroll-behavior: none;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #000000;
+        }
+      }
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <meta name="theme-color" content="#000000">
+<link rel="icon" href="/stay-in-the-loop/favicon.ico"/></head>
+
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+  <script src="/stay-in-the-loop/_expo/static/js/web/entry-51bae40b8041fc97830b30e8f9f9de8a.js" defer></script>
+</body>
+</html>
